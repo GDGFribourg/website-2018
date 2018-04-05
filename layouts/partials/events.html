@@ -1,0 +1,22 @@
+{{ "<!-- EVENTS -->" | safeHTML }}
+<section id="events">
+    {{ with .Site.Params.events.headline }}
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">{{ . }}</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+    {{ end }}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>
+                    Find all events of the GDG Fribourg on <a href="http://www.meetup.com/gdgfribourg">meetup</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

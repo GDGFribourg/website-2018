@@ -1,0 +1,45 @@
+{{ "<!-- ORGANIZERS -->" | safeHTML }}
+<section class="bg-light" id="organizers">
+    {{ with .Site.Params.organizers.headline }}
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">{{ . }}</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+    {{ end }}
+    <div class="container">
+        <div class="row">
+            {{ range .Site.Params.organizers.list }}
+            <div class="col-md-4 col-sm-12 text-center">
+                <div class="organizer-box">
+                    <img src="img/{{ .picture }}" class="img-circle img-organizer" alt="{{ .name }}">
+                    <h3>{{ .name }}</h3>
+                    {{ with .bio }}
+                        <p>{{ . }}</p>
+                    {{ end }}
+                    <div class="organizer-social">
+                        {{ with .gplus }}
+                        <a href="{{ . }}"><i class="icofont icofont-2x icofont-social-google-plus"></i></a>
+                        {{ end }}
+                        {{ with .facebook }}
+                        <a href="{{ . }}"><i class="icofont icofont-2x icofont-social-facebook"></i></a>
+                        {{ end }}
+                        {{ with .twitter }}
+                        <a href="{{ . }}"><i class="icofont icofont-2x icofont-social-twitter"></i></a>
+                        {{ end }}
+                        {{ with .github }}
+                        <a href="{{ . }}"><i class="icofont icofont-2x icofont-social-github"></i></a>
+                        {{ end }}
+                        {{ with .linkedin }}
+                        <a href="{{ . }}"><i class="icofont icofont-2x icofont-social-linkedin"></i></a>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,115 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "GDG Fribourg"
+theme = "hugo-creative-theme"
+
+[params]
+	name = "Your name"
+	description = "Your description"
+	favicon = "favicon.ico"
+
+	[params.navigation]
+		brand = "GDG Fribourg"
+
+		[params.navigation.links]
+			about      = "About"
+			events     = "Events"
+			services   = "What we do"
+			organizers = "Organizers"
+			coc        = "Code of Conduct"
+			contact    = "Contact"
+
+	# Hero section
+	[params.hero]
+		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
+		slogan     = "Code, Learn, Meet."
+		subtitle   = "Google Developer Group Fribourg"
+		buttonText = "Find out more"
+
+	# About section
+	[params.about]
+		headline    = "About the GDG Fribourg"
+		description = "The GDG Fribourg (Google Developer Group) is a community where developers can share their coding stories and their experiences. We love Open Source and our community is open to everyone. Currently, we are hosted at the \"Haute école d'ingénierie et d'architecture\" in Fribourg city."
+		disclaimer = "GDG Fribourg is an independent group; our activities and the opinions expressed here should in no way be linked to Google, the corporation."
+		buttonText = "Find out more"
+
+
+	[params.events]
+		headline = "Events"
+
+	[params.coc]
+		headline = "Code of Conduct"
+		chapter  = "GDG Fribourg"
+
+	# Service section
+	[params.services]
+		headline = "What we do"
+
+        [[params.services.list]]
+            icon = "icofont-mic"
+            title = "Tech Talks"
+            description = "These talks are a grassroots-style series of presentation given by various technical experts spanning a wide spectrum of topics in technology and related areas."
+
+        [[params.services.list]]
+			icon = "icofont-pizza-slice"
+			title = "Round Tables"
+			description = "Free-form, community-focused events where all attendees can raise topics for discussion."
+
+		[[params.services.list]]
+            icon = "icofont-code"
+            title = "Code Labs"
+            description = "Specially prepared to provide step-by-step instructions, these events focus on introducing new technology and maximizing hands-on learning."
+
+        [[params.services.list]]
+            icon = "icofont-calendar"
+            title = "Dev Fests"
+            description = "GDG Dev Fests are large scale, community-run events that offer speaker sessions across single or multiple product areas, hackathons, code labs, and more..."
+
+        [[params.services.list]]
+            icon = "icofont-clock-time"
+            title = "Hackathons"
+            description = "Events where cross-disciplined teams collaborate intensively on specific projects or challenges. They often involve timed demonstrations and competition for prizes."
+
+	# Organizers section
+	[params.organizers]
+		headline = "Organizers"
+
+        [[params.organizers.list]]
+            name = "Jacques Supcik"
+			picture = "jacques.jpg"
+			bio = "Professor in computer science at the HEIA Fribourg, PhD from ETHZ, technology addict, horse lover."
+			gplus = "https://plus.google.com/u/0/+JacquesSupcik"
+			facebook = "https://www.facebook.com/jacques.supcik"
+			twitter = "https://twitter.com/supcik"
+			github = "https://github.com/supcik"
+			linkedin = "https://www.linkedin.com/in/supcik/"
+
+        [[params.organizers.list]]
+            name = "Lucy Linder"
+			picture = "lucy.jpg"
+			bio = "Previously involved in social studies (philosophy, sociology), I was in the verge of starting a Master when I took a class that changed my life: introduction to programming in Java. Five years later, I still feel the same delight when it comes to coding. Aside from my studies, I love reading, hiking (with the help of ingress and pokemon go) and learning new stuffs about my favorite animal: the octopus."
+			facebook = "https://www.facebook.com/lucy.derlin"
+			gplus = "https://plus.google.com/u/0/+LucyLinder"
+			github = "https://github.com/derlin"
+			linkedin = "https://ch.linkedin.com/in/lucy-linder-4a401726"
+
+        [[params.organizers.list]]
+            name = "Damien Goetschi"
+			picture = "damien.jpg"
+			gplus = "https://plus.google.com/+DamienGoetschi"
+			facebook = "https://www.facebook.com/goetschid"
+			twitter = "https://twitter.com/damieng002"
+			github = "https://github.com/damieng002"
+			linkedin = "https://www.linkedin.com/in/goetschidamien"
+
+	# Contact section
+	[params.contact]
+		headline = "Let's Get In Touch!"
+		description = "Ready to join us? That's great! Send us an email and we will get back to you as soon as possible!"
+		email = "info@gdgfribourg.ch"
+		meetup = "http://www.meetup.com/gdgfribourg"
+		youtube = "https://www.youtube.com/channel/UC9VJwqJhgpe5jbPLwxYP6nw"
+		facebook = "https://www.facebook.com/gdgfribourg"
+		twitter = "https://twitter.com/gdgfribourg"
+		gplus = "https://plus.google.com/102886547280518367914"
+		gdg = "https://plus.google.com/share?app=110&url=https%3A%2F%2Fgdgfribourg.ch%2F"
