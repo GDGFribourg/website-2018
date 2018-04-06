@@ -1,4 +1,4 @@
-baseURL = "https://www-2018.gdgfribourg.ch/"
+baseURL = "https://www.gdgfribourg.ch/"
 languageCode = "en-us"
 title = "GDG Fribourg"
 theme = "hugo-creative-theme"
