@@ -1,11 +1,11 @@
-baseURL = "http://example.org/"
+baseURL = "http://www-2018.gdgfribourg.ch/"
 languageCode = "en-us"
 title = "GDG Fribourg"
 theme = "hugo-creative-theme"
 
 [params]
-	name = "Your name"
-	description = "Your description"
+	name = "GDG Fribourg"
+	description = "Google Developer Group"
 	favicon = "favicon.ico"
 
 	[params.navigation]
