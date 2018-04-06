@@ -31,8 +31,21 @@ theme = "hugo-creative-theme"
 		headline    = "About the GDG Fribourg"
 		description = "The GDG Fribourg (Google Developer Group) is a community where developers can share their coding stories and their experiences. We love Open Source and our community is open to everyone. Currently, we are hosted at the \"Haute école d'ingénierie et d'architecture\" in Fribourg city."
 		disclaimer = "GDG Fribourg is an independent group; our activities and the opinions expressed here should in no way be linked to Google, the corporation."
-		buttonText = "Find out more"
-
+		
+		[params.about.sponsors]
+		    headline    = "Thank you to our sponsors"
+			[[params.about.sponsors.list]]
+				logo = "heiafr.png"
+				name = "HEIA-FR"
+				url = "https://www.heia-fr.ch/"
+			[[params.about.sponsors.list]]
+				logo = "isis.png"
+				name = "isis"
+				url = "https://isis.heia-fr.ch"
+			[[params.about.sponsors.list]]
+				logo = "alumni.png"
+				name = "HEIA-FR Alumni"
+				url = "https://alumni.heia-fr.ch/"
 
 	[params.events]
 		headline = "Events"
@@ -112,4 +125,3 @@ theme = "hugo-creative-theme"
 		facebook = "https://www.facebook.com/gdgfribourg"
 		twitter = "https://twitter.com/gdgfribourg"
 		gplus = "https://plus.google.com/102886547280518367914"
-		gdg = "https://plus.google.com/share?app=110&url=https%3A%2F%2Fgdgfribourg.ch%2F"

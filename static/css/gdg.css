@@ -24,7 +24,14 @@ p+ul {
 #coc a:focus {
     color: rgb(255, 255, 255);
 }
+.text-light a {
+    color: rgba(255, 255, 255, 0.7);
+}
 
+.text-light a:hover,
+.text-light a:focus {
+    color: rgb(255, 255, 255);
+}
 
 @media(min-width:990px) {
     .organizer-box {
@@ -39,6 +46,12 @@ p+ul {
 .img-organizer {
     width: 200px;
     height: 200px;
+}
+
+.img-sponsor {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
 }
 
 .bg-primary a {
@@ -91,3 +104,17 @@ p+ul {
     }
 }
 
+
+
+
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+    flex-wrap: wrap;
+  }
+  .row-eq-height > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+  }

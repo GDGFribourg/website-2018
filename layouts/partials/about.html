@@ -20,5 +20,16 @@
                 {{ end }}
             </div>
         </div>
+        <div class="row" style="margin-top:40px;">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                {{ with .Site.Params.about.sponsors.headline }}
+                    <h2 class="section-heading">{{ . }}</h2>
+                {{ end }}
+                <hr class="light">
+                {{ range .Site.Params.about.sponsors.list }}
+                    <a href="{{ .url }}"><img src="img/{{ .logo }}" class="img-rounded img-sponsor" alt="{{ .name }}"></a>
+                {{ end }}
+            </div>
+        </div>
     </div>
 </section>

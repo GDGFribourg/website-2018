@@ -11,7 +11,7 @@
         </div>
     {{ end }}
     <div class="container">
-        <div class="row">
+        <div class="row row-eq-height">
             {{ range .Site.Params.organizers.list }}
             <div class="col-md-4 col-sm-12 text-center">
                 <div class="organizer-box">
@@ -22,19 +22,19 @@
                     {{ end }}
                     <div class="organizer-social">
                         {{ with .gplus }}
-                        <a href="{{ . }}"><i class="icofont icofont-2x icofont-social-google-plus"></i></a>
+                        <a href="{{ . }}" style="text-decoration: none !important"><i class="icofont icofont-2x icofont-social-google-plus"></i></a>
                         {{ end }}
                         {{ with .facebook }}
-                        <a href="{{ . }}"><i class="icofont icofont-2x icofont-social-facebook"></i></a>
+                        <a href="{{ . }}" style="text-decoration: none !important"><i class="icofont icofont-2x icofont-social-facebook"></i></a>
                         {{ end }}
                         {{ with .twitter }}
-                        <a href="{{ . }}"><i class="icofont icofont-2x icofont-social-twitter"></i></a>
+                        <a href="{{ . }}" style="text-decoration: none !important"><i class="icofont icofont-2x icofont-social-twitter"></i></a>
                         {{ end }}
                         {{ with .github }}
-                        <a href="{{ . }}"><i class="icofont icofont-2x icofont-social-github"></i></a>
+                        <a href="{{ . }}" style="text-decoration: none !important"><i class="icofont icofont-2x icofont-social-github"></i></a>
                         {{ end }}
                         {{ with .linkedin }}
-                        <a href="{{ . }}"><i class="icofont icofont-2x icofont-social-linkedin"></i></a>
+                        <a href="{{ . }}" style="text-decoration: none !important"><i class="icofont icofont-2x icofont-social-linkedin"></i></a>
                         {{ end }}
                     </div>
                 </div>
