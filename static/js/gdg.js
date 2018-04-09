@@ -43,16 +43,25 @@ customElements.define('meetup-event', class extends HTMLElement {
         const title = this.getAttribute("title");
         const date = this.getAttribute("date");
         const url = this.getAttribute("url");
-        const pic = this.getAttribute("pic");
+        const pic = this.getAttribute("pic")||"https://pbs.twimg.com/profile_images/860130141367873537/RgNNnPfi_400x400.jpg";
 
         this._div = document.createElement('div');
-        const s0 = this._div.appendChild(document.createElement('span'));
-        s0.innerText = title;
+        $(this._div).attr("class","col-sm-12 text-center");
+        const box = this._div.appendChild(document.createElement('div'));
+        $(box).attr("class","organizer-box");
+        const a = box.appendChild(document.createElement('a'));
+        $(a).attr("href",url);
+        const img = a.appendChild(document.createElement('img'));
+        $(img).attr("src",pic);
+        $(img).attr("class","img-circle img-organizer");
+        $(img).attr("alt",title);
+        const h3 = a.appendChild(document.createElement('h3'));
+        h3.innerText = title;
+        const p = a.appendChild(document.createElement('p'));
+        p.innerText=date;
     }
 
     connectedCallback () {
         this.appendChild(this._div);
     }
-
-
 })
