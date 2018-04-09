@@ -66,6 +66,7 @@ p+ul {
     color: white;
 }
 
+/* Code to fix the breakpoint of the navigation */
 
 @media (max-width: 849px) {
     .navbar-header {
@@ -104,8 +105,7 @@ p+ul {
     }
 }
 
-
-
+/* Implementation of row-eq-height using flexbox */
 
 .row-eq-height {
     display: -webkit-box;
@@ -114,6 +114,7 @@ p+ul {
     display:         flex;
     flex-wrap: wrap;
   }
+
   .row-eq-height > [class*='col-'] {
     display: flex;
     flex-direction: column;
