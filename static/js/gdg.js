@@ -11,7 +11,7 @@ $('#collapseCoc').on('shown.bs.collapse', function () {
 function fetchEvents(nextEvents, cb, data) {
     if(!data) data = [];
     $.ajax({
-        url: nextEvents?"https://api.meetup.com/GDGFribourg/events?photo-host=public&page=20&sig_id=202723513&status=upcoming&fields=featured_photo&sig=5c0f0689d51bfb89fab572b32e7d85f25fc564f9&callback=?":"https://api.meetup.com/GDGFribourg/events?photo-host=public&page=5&sig_id=202723513&status=past&fields=featured_photo&sig=d41d0305181edce140ac427e6d50b4b653266f15&callback=?",
+        url: nextEvents?"https://api.meetup.com/GDGFribourg/events?photo-host=public&page=20&sig_id=202723513&status=upcoming&fields=featured_photo&sig=5c0f0689d51bfb89fab572b32e7d85f25fc564f9&callback=?":"https://api.meetup.com/GDGFribourg/events?desc=true&photo-host=public&page=5&sig_id=202723513&status=past&fields=featured_photo&sig=e08c9efa38b5cdc1919b81d422d834c8bb2948c9&callback=?",
         type: "get",
         dataType:'jsonp',
         crossDomain: true,
@@ -46,10 +46,8 @@ customElements.define('meetup-event', class extends HTMLElement {
         const pic = this.getAttribute("pic")||"https://pbs.twimg.com/profile_images/860130141367873537/RgNNnPfi_400x400.jpg";
 
         this._div = document.createElement('div');
-        $(this._div).attr("class","col-sm-12 text-center");
-        const box = this._div.appendChild(document.createElement('div'));
-        $(box).attr("class","organizer-box");
-        const a = box.appendChild(document.createElement('a'));
+        $(this._div).attr("class","organizer-box");
+        const a = this._div.appendChild(document.createElement('a'));
         $(a).attr("href",url);
         const img = a.appendChild(document.createElement('img'));
         $(img).attr("src",pic);
@@ -62,6 +60,7 @@ customElements.define('meetup-event', class extends HTMLElement {
     }
 
     connectedCallback () {
+        $(this).attr("class","col-md-4 col-sm-12 text-center");
         this.appendChild(this._div);
     }
 })
