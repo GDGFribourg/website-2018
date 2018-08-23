@@ -33,7 +33,7 @@ p+ul {
     color: rgb(255, 255, 255);
 }
 
-@media(min-width:990px) {
+@media(min-width:849px) {
     .organizer-box {
         margin: 20px auto 0;
     }
@@ -44,6 +44,12 @@ p+ul {
 }
 
 .img-organizer {
+    width: 200px;
+    height: 200px;
+}
+
+.img-event {
+    object-fit: cover;
     width: 200px;
     height: 200px;
 }
@@ -102,6 +108,9 @@ p+ul {
     }
     .collapse.in{
         display:block !important;
+    }
+    .col-sm-12 {
+        width: 100%;
     }
 }
 

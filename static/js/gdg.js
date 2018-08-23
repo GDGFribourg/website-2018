@@ -51,7 +51,7 @@ customElements.define('meetup-event', class extends HTMLElement {
         $(a).attr("href",url);
         const img = a.appendChild(document.createElement('img'));
         $(img).attr("src",pic);
-        $(img).attr("class","img-circle img-organizer");
+        $(img).attr("class","img-circle img-event");
         $(img).attr("alt",title);
         const h3 = a.appendChild(document.createElement('h3'));
         h3.innerText = title;
