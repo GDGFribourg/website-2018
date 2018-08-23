@@ -119,3 +119,8 @@ p+ul {
     display: flex;
     flex-direction: column;
   }
+
+  #footer i {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
